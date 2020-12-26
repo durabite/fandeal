@@ -1,1 +1,1 @@
-# fandeal
+Proyecto de maquetacion de template para Magento de fandeal
