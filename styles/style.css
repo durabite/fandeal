@@ -4,4 +4,16 @@
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
+#cabecera_promo {
+  background-color: #007DAF;
+}
+
+.texto-base {
+  font-size: 0.95em;
+}
+
+.menu-superior {
+  list-style: none;
+}
 /*# sourceMappingURL=style.css.map */
