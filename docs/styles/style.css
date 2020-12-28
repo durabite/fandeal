@@ -5,15 +5,124 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #f2f2f2 !important;
+}
+
 #cabecera_promo {
   background-color: #007DAF;
+  width: 100%;
 }
 
 .texto-base {
-  font-size: 0.95em;
+  font-size: 0.9em;
+}
+
+#cabecera_principal {
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 5px #a8a8a8;
+          box-shadow: 0px 3px 5px #a8a8a8;
 }
 
 .menu-superior {
   list-style: none;
+}
+
+.menu-superior li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 0.9em;
+  margin: 0 5px;
+}
+
+.menu-superior li a {
+  color: black;
+}
+
+.menu-superior li a svg {
+  width: 20px;
+  position: relative;
+  top: 7px;
+}
+
+#cabecera_central #logo_fandeal {
+  width: 80%;
+}
+
+#cabecera_central #campo_busqueda {
+  border: 2px solid #FD790E;
+  border-radius: 20px;
+  width: 100%;
+  outline: 0;
+  color: grey;
+  padding: 5px 10px;
+  font-size: 0.85em;
+}
+
+#cabecera_central button {
+  outline: 0;
+  border-radius: 100%;
+  background-color: #FD790E;
+  border: solid 2px #FD790E;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  cursor: pointer;
+}
+
+#cabecera_central button svg {
+  color: white;
+}
+
+#cabecera_central #carrito_acceso {
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+#cabecera_central #carrito_acceso span {
+  position: absolute;
+  background: #FD790E;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 2px;
+  border-radius: 40px;
+  width: 22px;
+  top: 10px;
+  right: 10px;
+}
+
+.menu-dd {
+  width: 100%;
+  outline: 0;
+}
+
+.menu-dd2 {
+  width: 100%;
+  outline: 0;
+  border-radius: 0px 0px 10px 10px !important;
+}
+
+#menu_categorias:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#menu_categorias {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  width: 100% !important;
+  border-radius: 20px 20px 0 0;
+}
+
+.dropdown-toggle::after {
+  content: none !important;
 }
 /*# sourceMappingURL=style.css.map */
