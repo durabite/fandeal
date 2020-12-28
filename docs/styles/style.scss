@@ -9,6 +9,13 @@ $gris-claro: #f2f2f2;
 }
 img {
     width: 100%;
+    border: none;
+}
+a {
+    text-decoration: none !important;
+}
+a:hover {
+    color: $naranja !important;
 }
 body {
     background-color: $gris-claro !important;
