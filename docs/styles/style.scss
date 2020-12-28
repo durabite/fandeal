@@ -14,9 +14,6 @@ img {
 a {
     text-decoration: none !important;
 }
-a:hover {
-    color: $naranja !important;
-}
 body {
     background-color: $gris-claro !important;
 }
@@ -46,6 +43,9 @@ body {
                 position: relative;
                 top: 7px;
             }
+        }
+        a:hover {
+            color: orange;
         }
     }
 }
@@ -118,7 +118,49 @@ body {
 .productos-agrupados {
     .titulos-seccion {
         color: black;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: bold;
+    }
+    .producto:hover {
+        border: 1px solid $naranja;
+        cursor: pointer;
+    }
+    .producto {
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgb(224, 224, 224);
+        .marca-prod{
+            color: $naranja;
+            font-size: 0.8em;
+        }
+        .categoria-prod{
+            color: black;
+            font-size: 0.8em;
+            text-align: left;
+        }
+        .titulo-prod {
+            font-size: 0.95em;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            height: 30px;
+            overflow: hidden;
+            line-height: 1em;
+        }
+        .precio-original-prod{
+            font-size: 0.85em;
+            color: grey;
+            text-decoration:line-through ;
+        }
+        .descuento-prod {
+            font-size: 00.8em;
+            color: green;
+        }
+        .precio-prod {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
     }
 }

@@ -14,10 +14,6 @@ a {
   text-decoration: none !important;
 }
 
-a:hover {
-  color: #FD790E !important;
-}
-
 body {
   background-color: #f2f2f2 !important;
 }
@@ -58,6 +54,10 @@ body {
   width: 20px;
   position: relative;
   top: 7px;
+}
+
+.menu-superior li a:hover {
+  color: orange;
 }
 
 #cabecera_central #logo_fandeal {
@@ -137,7 +137,57 @@ body {
 
 .productos-agrupados .titulos-seccion {
   color: black;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
+}
+
+.productos-agrupados .producto:hover {
+  border: 1px solid #FD790E;
+  cursor: pointer;
+}
+
+.productos-agrupados .producto {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.productos-agrupados .producto .marca-prod {
+  color: #FD790E;
+  font-size: 0.8em;
+}
+
+.productos-agrupados .producto .categoria-prod {
+  color: black;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.productos-agrupados .producto .titulo-prod {
+  font-size: 0.95em;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  height: 30px;
+  overflow: hidden;
+  line-height: 1em;
+}
+
+.productos-agrupados .producto .precio-original-prod {
+  font-size: 0.85em;
+  color: grey;
+  text-decoration: line-through;
+}
+
+.productos-agrupados .producto .descuento-prod {
+  font-size: 00.8em;
+  color: green;
+}
+
+.productos-agrupados .producto .precio-prod {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=style.css.map */
