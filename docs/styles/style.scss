@@ -114,3 +114,11 @@ body {
 .dropdown-toggle::after {
     content: none !important;
 }
+
+.productos-agrupados {
+    .titulos-seccion {
+        color: black;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
