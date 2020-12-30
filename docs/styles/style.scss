@@ -168,4 +168,47 @@ body {
     background-color: #222222;
     color: white;
     width: 100%;
+    img {
+        float: right;
+        width: 225px;
+        margin-top: 20px;
+    }
+    .titulos-footer {
+        color: $naranja;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    ul {
+        list-style: none;
+        padding-left: 10px;
+        li a {
+            color: white;
+        }
+        li a:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+#newsletter-input {
+    input {
+        width: 70%;
+        border: 0;
+        outline: 0;
+        padding: 5px;
+        color: grey;
+        font-weight: 100;
+        border-radius: 5px;
+    }
+    button {
+        border: 0;
+        background: $naranja;
+        color: Black;
+        width: 20%;
+        margin-left: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
+#dr-fandeal {
+    font-size: 0.85em;
 }

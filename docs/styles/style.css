@@ -196,4 +196,53 @@ body {
   color: white;
   width: 100%;
 }
+
+#footer-principal img {
+  float: right;
+  width: 225px;
+  margin-top: 20px;
+}
+
+#footer-principal .titulos-footer {
+  color: #FD790E;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#footer-principal ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#footer-principal ul li a {
+  color: white;
+}
+
+#footer-principal ul li a:hover {
+  text-decoration: underline !important;
+}
+
+#newsletter-input input {
+  width: 70%;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  color: grey;
+  font-weight: 100;
+  border-radius: 5px;
+}
+
+#newsletter-input button {
+  border: 0;
+  background: #FD790E;
+  color: Black;
+  width: 20%;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#dr-fandeal {
+  font-size: 0.85em;
+}
 /*# sourceMappingURL=style.css.map */
