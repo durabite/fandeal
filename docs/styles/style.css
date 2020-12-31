@@ -168,7 +168,7 @@ body {
   font-size: 0.95em;
   font-weight: bold;
   text-overflow: ellipsis;
-  height: 30px;
+  height: 31px;
   overflow: hidden;
   line-height: 1em;
 }
@@ -222,6 +222,37 @@ body {
   text-decoration: underline !important;
 }
 
+#rastreo-input {
+  background-color: #FD790E;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#rastreo-input input {
+  width: 70%;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  color: grey;
+  font-weight: 100;
+  border-radius: 5px;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+#rastreo-input button {
+  border: 0;
+  background: black;
+  color: white;
+  width: 30%;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
 #newsletter-input input {
   width: 70%;
   border: 0;
@@ -230,6 +261,8 @@ body {
   color: grey;
   font-weight: 100;
   border-radius: 5px;
+  font-size: 0.85em;
+  font-style: italic;
 }
 
 #newsletter-input button {
@@ -240,9 +273,22 @@ body {
   margin-left: 10px;
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #dr-fandeal {
   font-size: 0.85em;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.redes-sociales-iconos li {
+  margin-right: 10px;
+}
+
+.redes-sociales-iconos img {
+  width: 40px !important;
 }
 /*# sourceMappingURL=style.css.map */
