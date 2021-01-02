@@ -291,4 +291,51 @@ body {
 .redes-sociales-iconos img {
   width: 40px !important;
 }
+
+.seguimiento-categorias {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 0.85em;
+}
+
+.seguimiento-categorias li {
+  padding: 5px;
+}
+
+.filtros-categorias {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.filtros-categorias .tit-filtro-categorias {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.filtros-categorias .menu-filtro-categorias {
+  list-style: none;
+  font-size: 0.85em;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.filtros-categorias .menu-filtro-categorias a {
+  color: black;
+}
+
+.filtros-categorias .menu-filtro-categorias a:hover {
+  color: #FD790E;
+}
+
+#filtro-vistas {
+  border-bottom: 1px solid black;
+}
+
+#filtro-vistas span {
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

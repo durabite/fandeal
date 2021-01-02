@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fandeal - ¡A que no sabías que lo querias!</title>
+    <!-- Css Personalizado -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <!-- Css de bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- Cabecera Principal --> 
+    <div id="cabecera_principal">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-xl-4 col-lg-4 d-none d-lg-block" ><p class="texto-base pt-2">Pedidos/Información: <b>55 8291 9964</b></p></div>
+                <div class="col-xl-8 col-lg-8 col-md-12 text-right">
+                  <ul class="menu-superior d-none d-xl-block d-lg-block d-md-block"> 
+                      <li><a href="#">Vende en <b>Fandeal</b></a></li>
+                      <li>|</li>
+                      <li><a href="#"><i data-feather="help-circle"></i> FAQs</a></li>
+                      <li><a href="#"><i data-feather="smartphone"></i> App</a></li>
+                      <li>|</li>
+                      <li><a href="#"><i data-feather="heart"></i> Lista de Deseso</a></li>
+                      <li><a href="#"><i data-feather="user"></i> Mi Cuenta <i data-feather="chevron-down"></i></a></li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="row d-flex align-items-center" id="cabecera_central">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 offset-lg-0 offset-md-0 offset-sm-3 col-8 offset-3 ">
+                    <a href="/"><img src="image/logo_fandeal.png" alt="Logo Fandeal" id="logo_fandeal"></a>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12 my-2 d-flex justify-content-center">
+                    <input type="text" id="campo_busqueda">
+                    <button class="d-flex items-align-center p-1"><i data-feather="search"></i></button></div>
+                <div class="col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-4 offset-sm-4 col-6 offset-2" >
+                    <a href="#" class="d-flex justify-content-end" id="carrito_acceso">
+                        Mi carrito <i data-feather="shopping-bag"></i><span id="numeros_de_items">0</span>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-xl-3 col-lg-3 col-md-6 col-sm-6 col-8 d-flex mt-2">
+                    <div class="dropdown menu-dd">
+                        <button class="btn dropdown-toggle d-flex p-2 rounded-top" type="button" id="menu_categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="list" class="mr-2"></i> Categorías <i data-feather="chevron-down" class="ml-5"></i>
+                        </button>
+                        <div class="dropdown-menu menu-dd2" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">Tecnología</button>
+                          <button class="dropdown-item" type="button">Moda</button>
+                          <button class="dropdown-item" type="button">Bebés</button>
+                          <button class="dropdown-item" type="button">Hogar</button>
+                          <button class="dropdown-item" type="button">Deportes</button>
+                          <button class="dropdown-item" type="button">Salud</button>
+                          <button class="dropdown-item" type="button">Cuidado personal</button>
+                          <button class="dropdown-item" type="button">Mascotas</button>
+                          <button class="dropdown-item" type="button">Arte</button>
+                          <button class="dropdown-item" type="button">Papelería</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main -->
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <div class="row">
+            <div class="col-12 mt-2">
+                <ul class="seguimiento-categorias">
+                    <li ><a href="#">
+                        Inicio
+                    </a></li>
+                    <li>/</li>
+                    <li>
+                        <a href="#">Electrónica</a>
+                    </li>
+                    <li>/</li>
+                    <li>
+                        Gadgets
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <div class="filtros-categorias p-2 mb-3">
+                    <span class="tit-filtro-categorias">
+                        Sub-Categoria
+                    </span>
+                    <ul class="menu-filtro-categorias">
+                        <li><a href="#">
+                            Smart Watch
+                        </a></li>
+                        <li><a href="#">
+                            Bocinas
+                        </a></li>
+                        <li><a href="#">
+                            Audifonos
+                        </a></li>
+                        <li><a href="#">
+                            Manos Libres
+                        </a></li>
+                        <li><a href="#">
+                            Cables
+                        </a></li>
+                        <li><a href="#">
+                            Mp3
+                        </a></li>
+                        <li><a href="#">
+                            Teclados
+                        </a></li>
+                        <li><a href="#">
+                            Smart Band
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="filtros-categorias p-2 mb-3">
+                    <span class="tit-filtro-categorias">
+                        Marca
+                    </span>
+                    <ul class="menu-filtro-categorias">
+                        <li><a href="#">
+                            Casio
+                        </a></li>
+                        <li><a href="#">
+                            Lenovo
+                        </a></li>
+                        <li><a href="#">
+                            Logitech
+                        </a></li>
+                        <li><a href="#">
+                            Sony
+                        </a></li>
+                        <li><a href="#">
+                            Samsung
+                        </a></li>
+                        <li><a href="#">
+                            Besiter
+                        </a></li>
+                        <li><a href="#">
+                            Xiaomi
+                        </a></li>
+                        <li><a href="#">
+                            LG
+                        </a></li>
+                        <li><a href="#">
+                            Phillips
+                        </a></li>
+                        <li><a href="#">
+                            One Plus
+                        </a></li>
+                        <li><a href="#">
+                            Realme
+                        </a></li>
+                        <li><a href="#">
+                            Otros
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="filtros-categorias p-2">
+                    <span class="tit-filtro-categorias">
+                        Descuento
+                    </span>
+                    <ul class="menu-filtro-categorias">
+                        <li><a href="#">
+                            10% Off
+                        </a></li>
+                        <li><a href="#">
+                            20% Off
+                        </a></li>
+                        <li><a href="#">
+                            30% Off
+                        </a></li>
+                        <li><a href="#">
+                            40% Off
+                        </a></li>
+                        <li><a href="#">
+                            50% Off
+                        </a></li>
+                        <li><a href="#">
+                            60% Off
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end align-items-center pb-2 mb-2" id="filtro-vistas">
+                        <span class="d-flex mr-2">
+                            Más relevantes <i data-feather="chevron-down"></i>
+                        </span>
+                        <i data-feather="list" class="mr-2" style="cursor: pointer"></i>
+                        <i data-feather="grid" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+                <div class="row productos-agrupados">
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="producto">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                            <div class="d-flex justify-content-between">
+                                <span class="marca-prod">
+                                    K-Swiss 
+                                </span>
+                                <span class="categoria-prod">
+                                    Zapatería 
+                                </span>
+                            </div>
+                            <div class="titulo-prod my-1">
+                                Tenis Mcdavid Rojo K-Swiss
+                            </div>
+                            <div class="d-flex justify-content-between py-1">
+                               <span class="precio-original-prod">
+                                   $1,449 MXN
+                               </span>
+                               <span class="descuento-prod">
+                                   20% Off 
+                               </span>
+                           </div>
+                           <div class="precio-prod">
+                               $1,159 MXN
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Vistos Recientemente -->
+    <div class="container productos-agrupados py-2">
+        <div class="row">
+            <div class="col-xl-12 py-2">
+                <span class="titulos-seccion">Vistos recientemente</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mb-2">
+                <div class="producto">
+                    <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951123.jpg" alt="">
+                    <div class="d-flex justify-content-between">
+                        <span class="marca-prod">
+                            K-Swiss 
+                        </span>
+                        <span class="categoria-prod">
+                            Zapatería 
+                        </span>
+                    </div>
+                    <div class="titulo-prod my-1">
+                        Tenis Mcdavid Rojo K-Swiss
+                    </div>
+                    <div class="d-flex justify-content-between py-1">
+                       <span class="precio-original-prod">
+                           $1,449 MXN
+                       </span>
+                       <span class="descuento-prod">
+                           20% Off 
+                       </span>
+                   </div>
+                   <div class="precio-prod">
+                       $1,159 MXN
+                   </div>
+                </div>
+               </div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mb-2">
+               <div class="producto">
+                   <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2951128.jpg" alt="">
+                   <div class="d-flex justify-content-between">
+                       <span class="marca-prod">
+                           K-Swiss 
+                       </span>
+                       <span class="categoria-prod">
+                           Zapatería 
+                       </span>
+                   </div>
+                   <div class="titulo-prod my-1">
+                    Tenis Mcdavid Negro K-Swiss
+                   </div>
+                   <div class="d-flex justify-content-between py-1">
+                      <span class="precio-original-prod">
+                          $1,449 MXN
+                      </span>
+                      <span class="descuento-prod">
+                          20% Off 
+                      </span>
+                  </div>
+                  <div class="precio-prod">
+                      $1,159 MXN
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mb-2"><div class="producto">
+                    <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2950722.jpg" alt="">
+                    <div class="d-flex justify-content-between">
+                        <span class="marca-prod">
+                            K-Swiss 
+                        </span>
+                        <span class="categoria-prod">
+                            Zapatería 
+                        </span>
+                    </div>
+                    <div class="titulo-prod my-1">
+                        Tenis Marino K-Swiss
+                    </div>
+                    <div class="d-flex justify-content-between py-1">
+                       <span class="precio-original-prod">
+                           $1,549 MXN
+                       </span>
+                       <span class="descuento-prod">
+                           40% Off 
+                       </span>
+                   </div>
+                   <div class="precio-prod">
+                       $929 MXN
+                   </div>
+                </div></div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mb-2"><div class="producto">
+                    <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/2950727.jpg" alt="">
+                    <div class="d-flex justify-content-between">
+                        <span class="marca-prod">
+                            K-Swiss 
+                        </span>
+                        <span class="categoria-prod">
+                            Zapatería 
+                        </span>
+                    </div>
+                    <div class="titulo-prod my-1">
+                        Tenis Rojo Obscuro K-Swiss
+                    </div>
+                    <div class="d-flex justify-content-between py-1">
+                       <span class="precio-original-prod">
+                           $1,549 MXN
+                       </span>
+                       <span class="descuento-prod">
+                           40% Off 
+                       </span>
+                   </div>
+                   <div class="precio-prod">
+                       $929 MXN
+                   </div>
+                </div></div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mb-2"><div class="producto">
+                    <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/3139444.jpg" alt="">
+                    <div class="d-flex justify-content-between">
+                        <span class="marca-prod">
+                            K-Swiss 
+                        </span>
+                        <span class="categoria-prod">
+                            Zapatería 
+                        </span>
+                    </div>
+                    <div class="titulo-prod my-1">
+                        Tenis Negro con Agujeta K Swiss
+                    </div>
+                    <div class="d-flex justify-content-between py-1">
+                       <span class="precio-original-prod">
+                           $1,499 MXN
+                       </span>
+                       <span class="descuento-prod">
+                           30% Off 
+                       </span>
+                   </div>
+                   <div class="precio-prod">
+                       $1,049 MXN
+                   </div>
+                </div></div>
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mb-2"><div class="producto">
+                    <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/3139440.jpg" alt="">
+                    <div class="d-flex justify-content-between">
+                        <span class="marca-prod">
+                            K-Swiss 
+                        </span>
+                        <span class="categoria-prod">
+                            Zapatería 
+                        </span>
+                    </div>
+                    <div class="titulo-prod my-1">
+                        Tenis Blanco con Agujeta K Swiss
+                    </div>
+                    <div class="d-flex justify-content-between py-1">
+                       <span class="precio-original-prod">
+                           $1,499 MXN
+                       </span>
+                       <span class="descuento-prod">
+                           30% Off 
+                       </span>
+                   </div>
+                   <div class="precio-prod">
+                       $1,049 MXN
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer id="footer-principal" class="mt-5">
+        <div class="container py-3">
+            <div class="row my-2">
+                <div class="col-xl-4">
+                    <span class="titulos-footer">
+                        Fandeal
+                    </span>
+                    <ul>
+                        <li><a href="#">Aviso de privacidad</a></li>
+                        <li><a href="#">Quienes somos</a></li>
+                        <li><a href="#">Pago seguro</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Pedidos y devoluciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                    <span class="titulos-footer">
+                        Rastrea tu envío
+                    </span>
+                    <p>Introduce tu número de guía
+                    </p>
+                    <span class="d-flex" id="rastreo-input">
+                        <input type="text" value="10 Dígitos"><br>
+                        <button>Rastrear</button>
+                    </span>
+                    <span class="titulos-footer pt-2" style="display: block;">
+                        Síguenos
+                    </span>
+                    <ul class="redes-sociales-iconos d-flex">
+                        <li><a href="#"><img src="image/facebook-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="image/twitter-icon.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                    <span class="titulos-footer">
+                        Newsletter
+                    </span>
+                    <p>Suscríbete y recibe promociones semanales.</p>
+                    <div class="d-flex py-2" id="newsletter-input">
+                        <input type="text" value="correo@mail.com">
+                        <button>Enviar</button>
+                    </div>
+                    <img src="image/telefono-fandeal.png" alt="Telefono y Horario">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 d-flex justify-content-center align-items-center">
+                    <img src="image/google-play.png" alt="" style="margin: 0 auto; float: none; cursor: pointer;">
+                </div>
+                <div class="row col-12 d-flex justify-content-center">
+                    <p class="text-center" id="dr-fandeal">© 2016 Fandeal SA. All Rights Reserved. <br>
+                        Pino no. 343, colonia Atlampa, delegación Cuauhtemoc Ciudad de Mexico, Distrito Federal 06450 <br>
+                        Teléfono: (55) 8526-4236</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- example icon -->
+    <!-- <i data-feather="alert-octagon"></i> -->
+
+
+    <!-- Feather Icon -->
+    <script>feather.replace()</script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

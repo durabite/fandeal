@@ -32,9 +32,9 @@
     <div id="cabecera_principal">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-xl-4 col-lg-4" ><p class="texto-base pt-2">Pedidos/Información: <b>55 8291 9964</b></p></div>
-                <div class="col-xl-8 col-lg-8 text-right">
-                  <ul class="menu-superior"> 
+                <div class="col-xl-4 col-lg-4 d-none d-lg-block" ><p class="texto-base pt-2">Pedidos/Información: <b>55 8291 9964</b></p></div>
+                <div class="col-xl-8 col-lg-8 col-md-12 text-right">
+                  <ul class="menu-superior d-none d-xl-block d-lg-block d-md-block"> 
                       <li><a href="#">Vende en <b>Fandeal</b></a></li>
                       <li>|</li>
                       <li><a href="#"><i data-feather="help-circle"></i> FAQs</a></li>
@@ -47,11 +47,13 @@
             </div>
 
             <div class="row d-flex align-items-center" id="cabecera_central">
-                <div class="col-xl-3 col-lg-3"><a href="/"><img src="image/logo_fandeal.png" alt="Logo Fandeal" id="logo_fandeal"></a></div>
-                <div class="col-xl-6 col-lg-6 d-flex justify-content-center">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 offset-lg-0 offset-md-0 offset-sm-3 col-8 offset-3 ">
+                    <a href="/"><img src="image/logo_fandeal.png" alt="Logo Fandeal" id="logo_fandeal"></a>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12 my-2 d-flex justify-content-center">
                     <input type="text" id="campo_busqueda">
                     <button class="d-flex items-align-center p-1"><i data-feather="search"></i></button></div>
-                <div class="col-xl-3 col-lg-3" >
+                <div class="col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-4 offset-sm-4 col-6 offset-2" >
                     <a href="#" class="d-flex justify-content-end" id="carrito_acceso">
                         Mi carrito <i data-feather="shopping-bag"></i><span id="numeros_de_items">0</span>
                     </a> 
@@ -59,13 +61,17 @@
             </div>
 
             <div class="row">
-                <div class="col col-xl-3 col-lg-3 d-flex mt-2">
+                <div class="col col-xl-3 col-lg-3 col-md-6 col-sm-6 col-8 d-flex mt-2">
                     <div class="dropdown menu-dd">
                         <button class="btn dropdown-toggle d-flex p-2 rounded-top" type="button" id="menu_categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i data-feather="list" class="mr-2"></i> Categorías <i data-feather="chevron-down" class="ml-5"></i>
                         </button>
                         <div class="dropdown-menu menu-dd2" aria-labelledby="dropdownMenu2">
-                          <button class="dropdown-item" type="button">Tecnología</button>
+                          <button class="dropdown-item" type="button">
+                            <a href="categoria.html">
+                                Tecnología
+                            </a>  
+                            </button>
                           <button class="dropdown-item" type="button">Moda</button>
                           <button class="dropdown-item" type="button">Bebés</button>
                           <button class="dropdown-item" type="button">Hogar</button>
@@ -305,7 +311,7 @@
      </div>
 
      <!-- Promociones Internas -->
-    <div class="container py-2">
+    <div class="container py-2 d-none d-md-block">
         <div class="row">
             <div class="col-xl-12">
                 <img src="image/promos-internas.png" alt="Nuestras Promociones" class="rounded">
